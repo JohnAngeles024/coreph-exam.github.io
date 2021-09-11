@@ -1,0 +1,119 @@
+.video-slider {
+    width: 1000px;
+    height: auto;
+    margin: 20px auto;
+
+    &-wrapper {
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 50%;
+    }
+
+    &__iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+    }
+
+    &__list {
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    &__item {
+        height: 200px;
+        width: 200px;
+        cursor: pointer;
+        margin: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .slick-current{
+        border-bottom: 5px solid blue;
+    }
+
+    .prev_arrow {
+        color: black;
+        font-size: 40px;
+        position: absolute;
+        top: 40%;
+        left: 50px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .next_arrow {
+        color: black;
+        position: absolute;
+        font-size: 40px;
+        top: 40%;
+        right: 50px;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .video-slider {
+        width: 130.208vw;
+        height: auto;
+        margin: 2.604vw auto;
+    
+        &-wrapper {
+            position: relative;
+            padding-top: 3.255vw;
+            padding-bottom: 50%;
+        }
+    
+     
+    
+        &__list {
+            width: 100%;
+            height: 100%;
+            padding-top: 1.302vw;
+        }
+    
+        &__item {
+            height: 26.042vw;
+            width: 26.042vw;
+            cursor: pointer;
+            margin: 1.302vw;
+    
+            &.active {
+                border-bottom:0.651vw solid blue;
+            }
+        }
+    
+        .prev_arrow {
+            color: black;
+            font-size: 5.208vw;
+            position: absolute;
+            top: 40%;
+            left: 6.510vw;
+            z-index: 1;
+            cursor: pointer;
+        }
+    
+        .next_arrow {
+            color: black;
+            position: absolute;
+            font-size: 5.208vw;
+            top: 40%;
+            right: 6.510vw;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+    
+}
